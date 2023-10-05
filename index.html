@@ -324,7 +324,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container container-footer">
+    <div class="container container-footer">
           <div class="footer-box_one">
             <a href="./index.html" target="_blank" class="footer-logo">WEB<span class="footer-logo-storage">Studio</span></a>
             <p class="footer-text_one">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -361,10 +361,11 @@
             </a>
         </li>
         </ul>
-        </div class="footer-box_three">
+        </div>
+        <div class="footer-box_two">
+        <p class="footer-form-text">Subscribe</p>
         <form class="footer-form">
           <label for="email" class="footer-form-label">
-          Subscribe
           <input class="footer-form-email" type="email" name="email" placeholder="E-mail"/>
           </label>
           <button class="footer-form-bnt" type="submit">Subscribe
@@ -374,6 +375,7 @@
           </button>
         </form>
         </div>
+    </div>
     </footer>
 
     <!-- Modal -->
@@ -385,12 +387,13 @@
                 </svg>
             </button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form>
             <div class="label-box">
             <label for="user-name" class="modal-label">
                 Name
                 <div class="imput-wrap">
-                <input class="modal-input" type="text" name="name"/>
-                <svg class="modal-icon" width="18" height="18">
+                <input class="modal-input" type="text" name="user-name" id="user-name"/>
+                <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
                 </div>
@@ -400,7 +403,7 @@
             <label for="user-phone" class="modal-label">
                 Phone
                 <div class="imput-wrap">
-                <input class="modal-input" type="tel" name="phone" required/>
+                <input class="modal-input" type="tel" name="phone" id="user-phone" required/>
                 <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
@@ -411,7 +414,7 @@
             <label for="user-email" class="modal-label">
                 Email
                 <div class="imput-wrap">
-                <input class="modal-input" type="email" name="email" required/>
+                <input class="modal-input" type="email" name="email" id="user-email" required/>
                 <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                 </svg>
@@ -419,16 +422,16 @@
             </label>
             </div>
             <div class="label-box_last">
-            <label for="user-text" class="modal-label">
+            <label for="user-comment" class="modal-label">
                 Comment
-                <textarea name="user-text" id="user-text" placeholder="Text input" class="modal-textarea"></textarea>
             </label>
+            <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
             </div>
             <div class="label-box_check">
-            <input class="modal-checkbox visually-hidden" type="checkbox" name="privacy policy" id="privacy policy" required/>
-            <label for="privacy policy" class="modal-privacy">
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required/>
+            <label for="user-privacy" class="modal-privacy">
                 <span class="check-text-box">
-                    <svg class="modal-icon_check" width="10" height="10">
+                    <svg class="modal-icon_check" width="10" height="8">
                         <use href="./images/icons.svg#icon-checkmark"></use>
                     </svg>
                 </span>
@@ -436,6 +439,7 @@
             </label>
             </div>
             <button class="modal-btn_two" type="submit">Send</button>
+            </form>
        </div>
    </div>
 </body>
