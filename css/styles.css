@@ -762,6 +762,10 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 }
 
+.label-box_check{
+margin-bottom: 24px;
+}
+
 .modal-privacy{
 color:#8E8F99;
 font-size: 12px;
@@ -770,22 +774,33 @@ letter-spacing: 0.04em;
 display: flex;
 align-items: center;
 cursor: pointer;
-margin-bottom: 24px;
 }
 
-.modal-checkbox{
-width: 16px;
-height: 16px;
-border-width: 1px;
-margin-right: 8px;
-}
-
-.modal-privacy span{
+.modal-privacy a{
 color: #4D5AE5;
 line-height: 1.33;
 text-decoration-line: underline;
-margin-left: 4px;
 }
+
+.check-text-box{
+display: block;
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.40);
+margin-right: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+
+.modal-checkbox:checked + .modal-privacy > .check-text-box {
+background-color: #404BBF;
+border: none;
+fill: #FFF;
+}
+
 
 .modal-btn_two{
 color: #FFF;
